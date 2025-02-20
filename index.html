@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Receitas</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo do Site">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Receitas</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="search-section">
+            <h1>Busca de Receitas</h1>
+            <div class="barradepesquisa">
+                <input type="text" placeholder="Digite os ingredientes que você tem (ex.: farinha, ovos, leite)">
+                <button>Buscar</button>
+            </div>
+            <div class="filtros">
+                <div class="filtro">Sobremesas</div>
+                <div class="filtro">Massas</div>
+                <div class="filtro">Baixo Açúcar</div>
+                <div class="filtro">Vegetariano</div>
+                <div class="filtro">Fácil</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="mais-procurados">
+            <h1>Mais Procurados de Hoje</h1>
+            <div class="receitas-grid">
+                <div class="receita-card">
+                    <img src="images/bolo-chocolate.jpg" alt="Bolo de Chocolate">
+                    <div class="receita-info">
+                        <h3>Bolo de Chocolate</h3>
+                        <p>Ingredientes: farinha, açúcar, cacau, ovos, leite</p>
+                    </div>
+                </div>
+                <div class="receita-card">
+                    <img src="images/macarrao-alho-oleo.jpg" alt="Macarrão ao Alho e Óleo">
+                    <div class="receita-info">
+                        <h3>Macarrão ao Alho e Óleo</h3>
+                        <p>Ingredientes: macarrão, alho, azeite, sal</p>
+                    </div>
+                </div>
+                <div class="receita-card">
+                    <img src="images/creme-abacate.jpg" alt="Creme de Abacate">
+                    <div class="receita-info">
+                        <h3>Creme de Abacate</h3>
+                        <p>Ingredientes: abacate, limão, açúcar mascavo</p>
+                    </div>
+                </div>
+                <div class="receita-card">
+                    <img src="images/panqueca.jpg" alt="Panqueca">
+                    <div class="receita-info">
+                        <h3>Panqueca</h3>
+                        <p>Ingredientes: farinha, ovos, leite, açúcar</p>
+                    </div>
+                </div>
+                <div class="receita-card">
+                    <img src="images/salada.jpg" alt="Salada">
+                    <div class="receita-info">
+                        <h3>Salada</h3>
+                        <p>Ingredientes: alface, tomate, cenoura, azeite</p>
+                    </div>
+                </div>
+                <div class="receita-card">
+                    <img src="images/sanduiche.jpg" alt="Sanduíche">
+                    <div class="receita-info">
+                        <h3>Sanduíche</h3>
+                        <p>Ingredientes: pão, queijo, presunto, alface, tomate</p>
+                    </div>
+                </div>
+                <div class="receita-card">
+                    <img src="images/sopa.jpg" alt="Sopa">
+                    <div class="receita-info">
+                        <h3>Sopa</h3>
+                        <p>Ingredientes: frango, batata, cenoura, cebola, sal</p>
+                    </div>
+                </div>
+                <div class="receita-card">
+                    <img src="images/suco.jpg" alt="Suco Natural">
+                    <div class="receita-info">
+                        <h3>Suco Natural</h3>
+                        <p>Ingredientes: laranja, cenoura, beterraba</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="blocao">
+            <div class="caixa favorita">
+                <h1>A Favorita do site: <br> Bacalhau tiro e queda</h1>
+                <img src="images/bacalhau.jpg" alt="Bacalhau tiro e queda" class="favorita-img">
+                <p id="bacalhau">
+                    Ingredientes (2 porções): <br>
+                    200 g de bacalhau desfiado em lascas grandes <br>
+                    1 e ½ cebola de cabeça cortada em rodelas <br>
+                    2 batatas <br>
+                    2 colheres de queijo tipo catupiry <br>
+                    5 azeitonas verdes ou pretas <br>
+                    100 ml de azeite extra virgem <br>
+                    1 colher de salsinha picada <br>
+                    1 colher de queijo parmesão ralado <br>
+                </p>
+                <div class="favorita-actions">
+                    <button class="like-button">Curtir</button>
+                </div>
+                <div class="comentarios">
+                    <h2>Comentários</h2>
+                    <textarea placeholder="Deixe seu comentário"></textarea>
+                    <button class="comentar-button">Comentar</button>
+                </div>
+                <h1>Quantas porções?</h1>
+                <div class="divslider">
+                    <div class="slidergeral">
+                        <input type="range" min="2" max="5" value="2" step="1" class="slider" id="multiplicador-slider">
+                        <div class="slidernum">
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="equipamentos">
+            <div class="caixa-equipamentos">
+                <div class="equipamentos-grid">
+                    <h1>Equipamentos Necessários para uma boa receita:
+                    </h1>
+                    <div class="equipamento-card">
+                        <h3>Batedeira</h3>
+                        <p>Usada para bater massas e claras em neve.</p>
+                    </div>
+                    <div class="equipamento-card">
+                        <h3>Liquidificador</h3>
+                        <p>Ideal para sucos, vitaminas e massas líquidas.</p>
+                    </div>
+                    <div class="equipamento-card">
+                        <h3>Panela de Pressão</h3>
+                        <p>Útil para cozinhar alimentos mais rapidamente.</p>
+                    </div>
+                    <div class="equipamento-card">
+                        <h3>Formas de Bolo</h3>
+                        <p>Essenciais para assar bolos e tortas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+            <h1>Receitas Típicas de:</h1>
+            <div class="container">
+                <div class="cartao">
+                    <img class="imagemcorre" src="images/placeholder.jpg" alt="Guamirim">
+                    <h3>Guamirim</h3>
+                    <p>Cuca: Um bolo tradicional alemão com cobertura de farofa doce e frutas.</p>
+                    <p>Chimia de frutas: Geleia caseira, especialmente de uva ou maçã.</p>
+                </div>
+                <div class="cartao">
+                    <img class="imagemcorre" src="images/placeholder.jpg" alt="Braganey">
+                    <h3>Braganey</h3>
+                    <p>Arroz tropeiro: Mistura de arroz, linguiça, carne seca, e temperos.</p>
+                    <p>Bolo de polvilho: Tradicional em comunidades rurais do Paraná.</p>
+                </div>
+                <div class="cartao">
+                    <img class="imagemcorre" src="images/placeholder.jpg" alt="Guarapuava">
+                    <h3>Guarapuava</h3>
+                    <p>Pierogi ou Pirohy: Um pastel recheado, cozido ou frito, típico da culinária polonesa.</p>
+                    <p>Soquete de carneiro com agrião: Carne de carneiro bem cozida com vegetais.</p>
+                </div>
+                <div class="cartao">
+                    <img class="imagemcorre" src="images/placeholder.jpg" alt="Ponta Grossa">
+                    <h3>Ponta Grossa</h3>
+                    <p>Carneiro no buraco: Carne de carneiro cozida em um buraco forrado com brasas e terra.</p>
+                    <p>Arroz carreteiro: Feito com charque ou carne seca.</p>
+                </div>
+                <div class="cartao">
+                    <img class="imagemcorre" src="images/placeholder.jpg" alt="Prudentópolis">
+                    <h3>Prudentópolis</h3>
+                    <p>Varenyky: Massa cozida recheada com batata e requeijão.</p>
+                    <p>Borscht: Sopa de beterraba com creme azedo.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>Uma plataforma online que celebra a culinária global, oferecendo receitas autênticas, dicas e inspiração para cozinheiros de todos os níveis explorarem os sabores do mundo.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Página Inicial</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Endereço: Rua Exemplo, 123</p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Email: contato@meusite.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        </div>
+     </footer>
+</body>
+</html>
